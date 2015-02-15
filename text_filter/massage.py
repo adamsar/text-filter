@@ -25,5 +25,5 @@ def massage(data):
             l = l.replace('  ', ' ')
         good_data.append(l)            
     
-    with_numbers = ["/t".join([i, l]) for i, l in enumerate(good_data)]
+    with_numbers = ["/t".join([str(i), l]) for i, l in enumerate(good_data)]
     return "\n".join(with_numbers)
