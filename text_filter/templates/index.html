@@ -1,8 +1,18 @@
 <html>
   <head>
-    <title>Test page</title>
+    <title>Text converter</title>
+    <link rel="stylesheet" href="/static/bootstrap/dist/css/bootstrap.min.css" />
   </head>
   <body>
-    <h2> Test </h2>
+    <div class="container">
+      <h2>Text</h2>
+      <form action="/filter" method="POST">
+	<div class="row">	
+	  <textarea name="text">Copy and paste text here</textarea>
+	</div>
+	<div class="row">
+	  <input type="submit" name="submit" class="btn btn-primary" value="Filter text" />
+	</div>	  
+      </form>
   </body>
 </html>
